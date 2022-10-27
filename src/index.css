@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+:root {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color-scheme: light dark;
+  --max-width: 650px;
+  --bold: 700;
+  --mobil-width: 375px;
+  --desktop-width: 1440px;
+  --primary-cyan: hsl(179, 62%, 43%);
+  --primary-bright-yellow: hsl(71, 73%, 54%);
+  --neutral-light-gray: hsl(204, 43%, 93%);
+  --neutral-grayish-blue: hsl(218, 22%, 67%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--neutral-light-gray);
+
+  color: var(--neutral-grayish-blue);
+  font-weight: 400;
+}
+
+h1,
+h2,
+strong {
+  font-weight: var(--bold);
+}
+
+h1 {
+  font-size: 1.2em;
+}
+
+h2 {
+  font-size: 1.1em;
+}
+
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+
+/* Design */
+.container {
+  max-width: var(--max-width);
+  margin: 1em auto;
+  box-shadow: 0 0 25rem .1rem rgb(108, 107, 107);
+  border-radius: .8rem;
+}
+
+.section {
+  padding: 2em;
+}
+
+/* Main section */
+
+.header {
+  background-color: white;
+  border-radius: .8rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.header__title {
+  color: var(--primary-cyan);
+}
+
+.header__subtitle {
+  color: var(--primary-bright-yellow);
+}
+
+/* Cards  */
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--primary-cyan);
+  border-radius: .8rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.card>.section {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 50%;
+  min-width: 220px;
+}
+
+.card__title {
+  color: white;
+}
+
+.card>section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+/* Suscription */
+
+.card__suscription {
+  color: white;
+}
+
+.card__price {
+  font-weight: 400;
+  color: var(--neutral-light-gray);
+}
+
+.card__price strong {
+  color: white;
+  font-size: 2em;
+  vertical-align: middle;
+}
+
+.card__btn {
+  width: 100%;
+  padding: 1em;
+  background-color: var(--primary-bright-yellow);
+  border-style: none;
+  color: white;
+  font-weight: var(--bold);
+  outline-style: none;
+  border-radius: .3rem;
+  box-shadow: 0 0 25px 0 rgb(135, 134, 134);
+  cursor: pointer;
+  transition: ease-in-out transform .5s;
+}
+  .card__btn:hover {
+    transform: scale(90%);
+  }
+
+/*Why us  */
+.card__why-us {
+  /* background-color: var(--primary-cyan); */
+  color: white;
+  box-shadow: 0 0 100vw rgba(255, 255, 255, .1) inset;
+}
