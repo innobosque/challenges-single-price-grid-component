@@ -22,7 +22,7 @@ export const App = () => {
       {/* Suscripción */}
       <section className='card card__suscription'>
         <h1 className="card__title">Monthly Subscription</h1>
-        <div className='card__price'><strong>$29</strong> per month</div>
+        <p className='card__price'><strong>$29</strong> per month</p>
         <p className='card__text'>Full access for less than $1 a day</p>
         <button onClick={saludar} className="card__btn">{ value }</button>
       </section>
